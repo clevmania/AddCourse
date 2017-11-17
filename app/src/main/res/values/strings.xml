@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">AddCourse</string>
+    <string name="heading">Setting Up Your Profile</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="year">Choose the year</string>
+    <string name="semsta">Semester</string>
+    <array name="cos_year">
+        <item>Select Year</item>
+        <item>First</item>
+        <item>Second</item>
+        <item>Third</item>
+        <item>Fourth</item>
+    </array>
+    <string-array name="semester">
+        <item>Semester</item>
+        <item>1st</item>
+        <item>2nd</item>
+    </string-array>
+</resources>

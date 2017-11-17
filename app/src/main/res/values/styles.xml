@@ -1,0 +1,10 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"/>
+        <!-- Customize your theme here. -->
+    //just added this
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.DarkActionBar">
+    </style>
+
+</resources>

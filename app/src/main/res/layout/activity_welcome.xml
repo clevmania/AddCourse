@@ -1,0 +1,185 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:background="#3f51b5"
+                android:layout_height="match_parent"
+                tools:context=".WelcomeActivity">
+
+    <TextView
+        android:id="@+id/welcomeheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hi, User"
+        android:textColor="#b2ebf2"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="45sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/Subheader"
+        android:textColor="#4dd0e1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcomeheader"
+        android:text="welcome to your gradebook"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:gravity="center"/>
+
+
+    <ProgressBar
+        android:id="@+id/circularProgressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:layout_below="@+id/Subheader"
+        android:progress="10"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:progressDrawable="@drawable/circular"
+        android:secondaryProgress="100"
+        />
+
+    <ImageView
+        android:layout_alignBaseline="@+id/circularProgressbar"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_below="@+id/Subheader"
+        android:background="@drawable/whitecircle"
+        android:layout_marginTop="55dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:gravity="center"
+        android:layout_below="@+id/Subheader"
+        android:text="3.75"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#3eda7f"
+        android:textSize="30sp" />
+
+   <LinearLayout
+       android:layout_below="@+id/tv"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:gravity="center"
+       android:layout_marginBottom="10dp"
+       android:layout_centerInParent="true">
+
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center">
+
+           <Button
+               android:id="@+id/btnAddGrade"
+               android:layout_width="80dp"
+               android:layout_height="80dp"
+               android:onClick="newCourse"
+               android:background="@mipmap/ic_add_grade"
+               />
+
+           <TextView
+               android:id="@+id/tvbtnAdd"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Add"
+               android:layout_centerInParent="true"
+               android:layout_below="@+id/btnAddGrade"
+               android:textColor="#18ffff"
+               android:textSize="15sp" />
+
+           <TextView
+               android:id="@+id/tvbtnAdd2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Grade"
+               android:layout_centerInParent="true"
+               android:layout_below="@+id/tvbtnAdd"
+               android:textColor="#18ffff"
+               android:textSize="15sp" />
+
+       </RelativeLayout>
+
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center">
+
+
+           <Button
+               android:id="@+id/btnViewGrade"
+               android:layout_width="80dp"
+               android:layout_height="80dp"
+               android:onClick="viewAllCourses"
+               android:background="@mipmap/ic_view_grades"
+               />
+
+
+           <TextView
+               android:id="@+id/tvbtnView"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="View"
+               android:layout_below="@+id/btnViewGrade"
+               android:layout_centerInParent="true"
+               android:textColor="#3eda7f"
+               android:textSize="15sp" />
+
+           <TextView
+               android:id="@+id/tvbtnView2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Grades"
+               android:layout_below="@+id/tvbtnView"
+               android:layout_centerInParent="true"
+               android:textColor="#3eda7f"
+               android:textSize="15sp" />
+
+       </RelativeLayout>
+
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center">
+
+           <Button
+               android:id="@+id/btnShare"
+               android:layout_width="80dp"
+               android:layout_height="80dp"
+               android:onClick="shareCourse"
+               android:background="@mipmap/ic_share"
+               />
+
+           <TextView
+               android:id="@+id/tvbtnShare"
+               android:layout_width="wrap_content"
+               android:layout_below="@+id/btnShare"
+               android:layout_height="wrap_content"
+               android:text="share"
+               android:layout_centerInParent="true"
+               android:textColor="#3eda7f"
+               android:textSize="15sp" />
+
+           <TextView
+               android:id="@+id/tvbtnShare2"
+               android:layout_width="wrap_content"
+               android:layout_below="@+id/tvbtnShare"
+               android:layout_height="wrap_content"
+               android:text="with friends"
+               android:layout_centerInParent="true"
+               android:textColor="#3eda7f"
+               android:textSize="15sp" />
+
+       </RelativeLayout>
+       </LinearLayout>
+
+</RelativeLayout>

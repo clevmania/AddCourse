@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+                  android:orientation="vertical"
+                  android:padding="20dp"
+                  android:layout_marginLeft="5dp"
+                  android:layout_marginRight="5dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+
+        // should adjust header margin
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course Details"
+            android:textColor="#a40404"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:id="@+id/textView5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="course Info"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:textStyle="italic"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:background="#a40404"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:inputType="textAutoComplete|textAutoCorrect"
+            android:hint="Course Title"
+            android:maxLines="2"
+            android:padding="10dp"
+            android:maxLength="200"
+            android:textColorHint="@color/material_blue_grey_800"
+            android:ems="10"
+            android:id="@+id/eTCosTitle"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:inputType="text"
+                android:hint="Course code"
+                android:maxLength="8"
+                android:padding="10dp"
+                android:textColorHint="@color/material_blue_grey_800"
+                android:ems="10"
+                android:id="@+id/eTCosCode"
+                android:layout_gravity="center_horizontal"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:inputType="number"
+                android:hint="unit"
+                android:maxLength="1"
+                android:padding="10dp"
+                android:textColorHint="@color/material_blue_grey_800"
+                android:ems="10"
+                android:id="@+id/eTCosUnit"/>
+        </LinearLayout>
+
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:inputType="text"
+            android:hint="Lecturer's Name"
+            android:maxLength="150"
+            android:padding="10dp"
+            android:textColorHint="@color/material_blue_grey_800"
+            android:ems="10"
+            android:id="@+id/eTLectName"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:inputType="text"
+            android:maxLines="3"
+            android:hint="Description"
+            android:padding="10dp"
+            android:textColorHint="@color/material_blue_grey_800"
+            android:ems="10"
+            android:id="@+id/eTCosDesc"/>
+
+        //enter score ui here
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score Details"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:textStyle="italic"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:background="#a40404"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:inputType="number"
+                android:hint="CA Score"
+                android:layout_weight="1"
+                android:maxLength="2"
+                android:padding="10dp"
+                android:textColorHint="@color/material_blue_grey_800"
+                android:ems="10"
+                android:id="@+id/eTCA"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:inputType="number"
+                android:hint="Exam Score"
+                android:layout_weight="1"
+                android:maxLength="2"
+                android:padding="10dp"
+                android:textColorHint="@color/material_blue_grey_800"
+                android:ems="10"
+                android:id="@+id/eTExam"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Session"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:textStyle="italic"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:background="#a40404"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <!--<EditText-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--android:inputType="number"-->
+                <!--android:hint="semester"-->
+                <!--android:layout_weight="1"-->
+                <!--android:maxLength="3"-->
+                <!--android:padding="10dp"-->
+                <!--android:textColorHint="@color/material_blue_grey_800"-->
+                <!--android:ems="10"-->
+                <!--android:id="@+id/eTSemester"/>-->
+
+            <!--<EditText-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--android:inputType="number"-->
+                <!--android:hint="year"-->
+                <!--android:layout_weight="1"-->
+                <!--android:maxLength="3"-->
+                <!--android:padding="10dp"-->
+                <!--android:textColorHint="@color/material_blue_grey_800"-->
+                <!--android:ems="10"-->
+                <!--android:id="@+id/eTYear"/>-->
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:prompt="@string/semsta"
+                android:entries="@array/semester"
+                android:spinnerMode="dialog"
+                android:id="@+id/spinner"/>
+
+            <Spinner
+                android:prompt="@string/year"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/cos_year"
+                android:spinnerMode="dialog"
+                android:id="@+id/spinner2"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:onClick="addCourse"
+                android:src="@drawable/ic_add_course"
+                android:id="@+id/addBtn"/>
+
+            </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+
